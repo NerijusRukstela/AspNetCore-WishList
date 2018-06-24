@@ -30,7 +30,7 @@ namespace WishList.Controllers
         {
             _context.Items.Add(item);
             _context.SaveChanges();
-            return RedirectToAction("Action");
+            return RedirectToAction("Index");
         }
         public IActionResult Delete(int id)
         {
